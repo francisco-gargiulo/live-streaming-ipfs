@@ -1,0 +1,1 @@
+/usr/bin/ffmpeg -y -i rtmp://127.0.0.1:1935/live/index -c:v copy -c:a copy -f tee -map 0:a? -map 0:v? [hls_time=2:hls_list_size=0]./media/index.m3u8|[f=dash:window_size=3:extra_window_size=0]./media/index.mpd

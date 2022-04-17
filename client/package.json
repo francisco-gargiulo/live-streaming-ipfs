@@ -1,0 +1,22 @@
+{
+  "name": "video-streaming",
+  "version": "1.0.0",
+  "description": "Video player",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./dist ./.cache ./.parcel-cache",
+    "build": "parcel build index.html --no-scope-hoist",
+    "serve": "parcel serve index.html --open -p 3000",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "hls.js": "^0.14.17",
+    "hlsjs-ipfs-loader": "^0.3.1",
+    "ipfs-core": "^0.14.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1",
+    "process": "^0.11.10",
+    "util": "^0.12.4"
+  }
+}
