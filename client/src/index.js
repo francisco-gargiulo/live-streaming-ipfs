@@ -5,7 +5,7 @@ import Hls from "hls.js";
 import HlsjsIpfsLoader from "hlsjs-ipfs-loader";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const testHash = "QmbgG5r6EMqx2SvVYcE8dPNEMDPRDbPHMwprieneUruiyn";
+  const testHash = "Qma2JcVDGPdcFrHaw4Drw5TcTnX54HXuSakxHHkqKJvZu9";
   const repoPath = "ipfs-" + Math.random();
   const node = await create({ repo: repoPath });
 
